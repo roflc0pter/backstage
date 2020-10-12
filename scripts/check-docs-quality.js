@@ -27,8 +27,8 @@ const inheritStdIo = {
 
 const LINT_SKIPPED_MESSAGE =
   'Skipping documentation quality check (vale not found). Install vale linter (https://docs.errata.ai/vale/install) to enable.\n';
-const ERROR_MESSAGE =
-  'Language linter (vale) generated errors. Please check the errors and review any markdown files that you changed.\n';
+const ERROR_MESSAGE = `Language linter (vale) generated errors. Please check the errors and review any markdown files that you changed.
+  Possibly update .github/styles/vocab.txt to add new valid words.\n`;
 
 // Proceed with the script only if Vale linter is installed. Limit the friction and surprises caused by the script.
 commandExists('vale')
